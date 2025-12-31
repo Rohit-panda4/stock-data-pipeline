@@ -205,3 +205,19 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data files
+data/raw/*
+data/processed/*
+!data/**/.gitkeep
+
+# Logs
+logs/*.log
+logs/*
+
+# Environment
+.env
+config/*.ini
+
+# Tableau temp files
+tableau/*.twb~
