@@ -23,15 +23,7 @@ Tableau Visualization • GitHub Portfolio • Data Engineering
 
 ## 🏗️ **Architecture**
 
-```mermaid
-graph TD
-    A[Yahoo Finance API<br/>yfinance] --> B[Python Ingestion<br/>fetch_prices.py]
-    B --> C[MySQL Database<br/>raw_prices table]
-    D[Python Transform<br/>transform_prices.py] --> E[MySQL metrics<br/>ma_7, ma_30, volatility]
-    E --> F[CSV Export<br/>export_metrics_to_csv.py]
-    F --> G[Tableau Public<br/>4 interactive charts]
-    G --> H[Live Dashboard<br/>Public URL]
-```
+![Architecture Diagram](docs/architecture.png)
 
 ***
 
@@ -203,11 +195,6 @@ python scripts/export_metrics_to_csv.py
 
 Built during **Google Advanced Data Analytics Certificate** coursework.  
 Inspired by production data engineering patterns.
-
-***
-
-**⭐ Star this repo if you found it useful!**  
-**🐛 Issues/PRs welcome!**
 
 ***
 
